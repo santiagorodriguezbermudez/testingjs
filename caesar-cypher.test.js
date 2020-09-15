@@ -25,5 +25,5 @@ test('Numbers should not change', () => {
 });
 
 test('Throw an error if there is invalid parameters', () => {
-  expect(CaesarCypher()).toThrow('Parameters not included');
+  expect(CaesarCypher).toThrowError();
 });
