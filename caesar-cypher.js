@@ -1,7 +1,23 @@
+const getCaesarValue = (character, key, asciiFactor) => {
+  let asciiCode;
+
+  asciiCode = character.charCodeAt(0);
+  asciiCode -=  asciiFactor;
+  asciiCode += key;
+  asciiCode %= 26;
+  if (asciiCode < 0) {
+    asciiCode = 26 + asciiCode;
+  }
+  asciiCode += asciiFactor;
+
+  return String.fromCharCode(asciiCode);
+}
+
 const CaesarCypher = (string, key = null) => {
   let newString = '';
   let asciiCode;
   let newCharacter;
+  let asciiFactor;
 
   if (typeof string !== 'string') {
     throw new Error('Parameters not included');
@@ -11,15 +27,11 @@ const CaesarCypher = (string, key = null) => {
   } else {
     [...string].forEach((character) => {
       if (character.match(/^[A-Z]+$/)) {
-        asciiCode = character.charCodeAt;
-        asciiCode = ((key - 65) % 26) + 65;
-        newCharacter = String.fromCharCode(asciiCode);
-        newString += newCharacter;
+        asciiFactor = 65
+        newString += getCaesarValue(character, key, asciiFactor);
       } else if (character.match(/^[a-z]+$/)) {
-        asciiCode = character.charCodeAt;
-        asciiCode = ((key - 90) % 26) + 90;
-        newCharacter = String.fromCharCode(asciiCode);
-        newString += newCharacter;
+        asciiFactor = 97
+        newString += getCaesarValue(character, key, asciiFactor);
       } else {
         newString += character;
       }
