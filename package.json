@@ -4,7 +4,7 @@
   "description": "A educational project for Microverse involving testing for JS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/santiagorodriguezbermudez/testingjs/issues"
   },
-  "homepage": "https://github.com/santiagorodriguezbermudez/testingjs#readme"
+  "homepage": "https://github.com/santiagorodriguezbermudez/testingjs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.2"
+  }
 }
