@@ -1,4 +1,4 @@
-import CaesarCypher from './caesar-cypher';
+import CaesarCypher from '../javascript/caesar-cypher';
 
 test('With key of 2 abcd should be cdef', () => {
   expect(CaesarCypher('abcd', 2)).toBe('cdef');

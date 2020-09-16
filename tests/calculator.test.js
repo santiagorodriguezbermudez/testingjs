@@ -1,4 +1,4 @@
-import calculator from './calculator';
+import calculator from '../javascript/calculator';
 
 test('Add 2 + 5 should be equal to 7', () => {
   expect(calculator.add(2, 5)).toBe(7);

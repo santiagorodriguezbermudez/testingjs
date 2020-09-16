@@ -1,4 +1,4 @@
-import ArrayAnalysis from './array_analysis';
+import ArrayAnalysis from '../javascript/array_analysis';
 
 const testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const testArray2 = [1, 2, 3, 's', 5, 6, 7, 8, 'o', 10];
