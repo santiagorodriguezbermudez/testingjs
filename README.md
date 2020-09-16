@@ -2,19 +2,20 @@
 
 Building tests for JavaScript functions / modules.
 
+![screenshot](./assets/images/screenshot.png)
+
 ## Built With
 
--   Javascript.
-
-## Live Demo
-
-[Live Demo]()
+-   Javascript
+-   Jest
 
 ## Getting Started
 
 - Fork the repository and create a local one on your computer;
 - Move to the repository inside the command line using `cd` and the path to the file;
-- open `index.html` file on your browser.
+- Install packages on your local machine. Run `npm install`
+- Install jest on your local machine: `npm install --save-dev jest`
+- Run tests by using the run script: `npm run test`
 
 ## Authors
 
