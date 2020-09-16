@@ -5,17 +5,16 @@ const calculator = (() => {
   const div = (x, y) => {
     if (y > 0) {
       return x / y;
-    } else {
-      return NaN;
     }
-  }
+    return NaN;
+  };
 
   return {
     add,
     sub,
     mult,
     div,
-  }
+  };
 })();
 
 export default calculator;
